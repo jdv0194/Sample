@@ -232,6 +232,38 @@ div.about-img-mask {
   margin-right: 15px;
 }
 
+.item-one {
+  background-image: url('../images/food1.jpeg');
+}
+
+.item-two {
+  background-image: url('../images/food2.jpeg');
+}
+
+.item-three {
+  background-image: url('../images/food3.jpeg');
+}
+
+.item-four {
+  background-image: url('../images/food4.jpeg');
+}
+
+.item-five {
+  background-image: url('../images/food5.jpg');
+}
+
+.item-six {
+  background-image: url('../images/food6.jpeg');
+}
+
+.item-seven {
+  background-image: url('../images/food7.jpeg');
+}
+
+.item-eight {
+  background-image: url('../images/food8.jpeg');
+}
+
 .menu-items-text {
   margin: 10px auto;
 }
