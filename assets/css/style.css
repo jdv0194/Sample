@@ -66,12 +66,13 @@ hr {
 .flex {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 100px;
 }
 
 .about-us {
   width: 100vw;
-  height: 525px;
+  height: 80vh;
+  padding-top: 100px;
+  margin-bottom: 80px;
 }
 
 .about-text {
@@ -153,16 +154,16 @@ div.about-img-mask {
   background-image: url('../images/open-hours.jpg');
   background-position: 50% 50%;
   background-size: cover;
-  height: 55vh;
+  height: 37vh;
 }
 
 .hours-overlay {
   background-color: rgba(0, 0, 0, 0.7);
-  height: 55vh;
+  height: 37vh;
 }
 
 .hours-open .hours-section {
-  padding: 65px 0;
+  padding: 12px 0;
 }
 
 .hours-open-text {
@@ -192,13 +193,19 @@ div.about-img-mask {
 .hours-text h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 18px;
   margin: 0;
   padding-bottom: 25px;
 }
 
+.hours-open-text .img-btn {
+  height: 45px;
+  width: 100px;
+  margin-bottom: 30px;
+}
+
 .hours-header {
-  font-size: 4em;
+  font-size: 3.6em;
   margin: 0;
 }
 
@@ -207,8 +214,10 @@ div.about-img-mask {
 }
 
 .menu-section {
-  padding-top: 80px;
+  padding-top: 40px;
   padding-bottom: 40px;
+  padding-left: 60px;
+  margin-right: 120px;
 }
 
 .menu-section h4 {
@@ -220,7 +229,7 @@ div.about-img-mask {
 }
 
 .menu-list {
-  padding: 15px 0;
+  padding: 18px 0;
 }
 
 .menu-items-img {
@@ -264,22 +273,56 @@ div.about-img-mask {
   background-image: url('../images/food8.jpeg');
 }
 
-.menu-items-text {
-  margin: 10px auto;
+.menu-item-text {
+  margin-right: 15px;
 }
 
 .menu-item {
   font-family: 'Roboto', sans-serif;
   font-size: 22px;
   margin: 0;
-  width: 22%;
-  padding-right: 94px;
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 0;
+}
+
+.menu-item-one {
+  width: 25.8%;
+}
+
+.menu-item-two {
+  width: 19%;
+}
+
+.menu-item-three {
+  width: 21%;
+}
+
+.menu-item-four {
+  width: 18.5%;
+}
+
+.menu-item-five {
+  width: 28%;
+}
+
+.menu-item-six {
+  width: 17%;
+}
+
+.menu-item-seven {
+  width: 20%;
+}
+
+.menu-item-eight {
+  width: 26%;
 }
 
 .dotted-border {
   height: 21px;
   border-bottom: dotted 2px black;
-  width: 60%;
+  width: 55%;
+  padding: 0;
 }
 
 .menu-price {
@@ -297,7 +340,9 @@ div.about-img-mask {
 }
 
 .menu-item-description p {
-  padding-top: 15px;
+  padding-top: 10px;
   text-align: initial;
   color: #777;
+  line-height: 22px;
+  width: 90%;
 }
