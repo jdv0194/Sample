@@ -70,9 +70,9 @@ hr {
 
 .about-us {
   width: 100vw;
-  height: 80vh;
-  padding-top: 100px;
-  margin-bottom: 80px;
+  height: 90vh;
+  padding-top: 130px;
+  margin-bottom: 20px;
 }
 
 .about-text {
@@ -140,6 +140,7 @@ div.about-img-mask {
 
 .about-text button {
   color: #ba1212;
+  margin-top: 35px;
 }
 
 .about-text button:hover {

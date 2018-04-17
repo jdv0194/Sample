@@ -11,8 +11,8 @@ $(document).ready(function() {
     .fadeIn(1200);
 
   $('.header-text button')
-    .delay(3400)
-    .fadeIn(1000);
+    .delay(3250)
+    .fadeIn(500);
 
   // SCROLL TO ABOUT
   $('.header-text button').click(function() {
