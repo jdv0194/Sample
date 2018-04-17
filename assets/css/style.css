@@ -1,6 +1,23 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+div {
+  font: inherit;
+}
+
 .landing-img {
-  background: url("../images/1.jpg");
-  width: 1349px;
+  background: url('../images/1.jpg');
+  width: 100vw;
   height: 750px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -8,7 +25,7 @@
 }
 
 div.landing-mask {
-  width: 1349px;
+  width: 100vw;
   height: 750px;
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -21,14 +38,15 @@ div.landing-mask {
   text-align: center;
 }
 
-.header {
+.header,
+.hours-header {
   font-size: 7em;
   color: white;
-  font-family: "Lobster", cursive;
+  font-family: 'Lobster', cursive;
 }
 
-.header span {
-  color: #a50909;
+.header {
+  font-size: 7em;
 }
 
 hr {
@@ -36,7 +54,7 @@ hr {
 }
 
 .header-p {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.4em;
   line-height: 28px;
   color: white;
@@ -54,7 +72,8 @@ hr {
   color: #a50909;
   font-size: 16px;
   font-weight: bold;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.5s;
 }
 
 .header-text button:hover {
@@ -70,25 +89,34 @@ hr {
 }
 
 .about-us {
-  width: 1349px;
+  width: 100vw;
   height: 525px;
 }
 
 .about-text {
   max-width: 550px;
 }
-.about-header h2 {
+
+.about-header h2,
+.menu-section h2 {
   font-size: 4em;
   color: black;
-  font-family: "Lobster", cursive;
+  font-family: 'Lobster', cursive;
 }
 
-.about-header span {
+.about-header h2 {
+  font-size: 4em;
+}
+
+.header span,
+.about-header span,
+.menu-section span {
   color: #a50909;
 }
 
-.about-text p {
-  font-family: "Roboto", sans-serif;
+.about-text p,
+.menu-item-description p {
+  font-family: 'Roboto', sans-serif;
   font-size: 1.1em;
   line-height: 24px;
 }
@@ -96,7 +124,7 @@ hr {
 .about-img {
   width: 480px;
   height: 400px;
-  background: url("../images/2.jpg");
+  background: url('../images/2.jpg');
   margin: 0 auto;
   background-size: cover;
 }
@@ -107,7 +135,8 @@ div.about-img-mask {
   height: 400px;
 }
 
-.about-text button {
+.about-text button,
+.order-btn {
   width: 120px;
   height: 50px;
   border: 1px solid #a50909;
@@ -116,11 +145,134 @@ div.about-img-mask {
   color: #a50909;
   font-size: 16px;
   font-weight: bold;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.5s;
 }
 
-.about-text button:hover {
+.about-text button:hover,
+.order-btn:hover {
   background-color: #a50909;
   color: white;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.726);
+}
+
+.hours-open {
+  background-image: url('../images/open-hours.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 55vh;
+}
+
+.hours-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 55vh;
+}
+
+.hours-open .hours-section {
+  padding: 65px 0;
+}
+
+.hours-open-text {
+  text-align: center;
+  margin: 0 15px;
+  color: white;
+}
+
+.hours-open-text h1 {
+  font-family: 'Lobster', cursive;
+  font-weight: bold;
+  font-size: 70px;
+  margin: 0;
+}
+
+.red-underline {
+  width: 25%;
+  height: 2px;
+  background: #a50909;
+  margin: 10px auto 22px auto;
+}
+
+.hours-text {
+  margin: 5px auto;
+}
+
+.hours-text h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+.hours-header {
+  font-size: 4em;
+  margin: 0;
+}
+
+#menu {
+  text-align: center;
+}
+
+.menu-section {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.menu-section h4 {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 300;
+  padding-bottom: 40px;
+  margin: 0;
+}
+
+.menu-list {
+  padding: 15px 0;
+}
+
+.menu-items-img {
+  min-width: 120px;
+  height: 120px;
+  background-size: cover;
+  background-image: url('../images/food1.jpeg');
+  background-position: 50% 50%;
+  margin-right: 15px;
+}
+
+.menu-items-text {
+  margin: 10px auto;
+}
+
+.menu-item {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  margin: 0;
+  width: 22%;
+  padding-right: 94px;
+}
+
+.dotted-border {
+  height: 21px;
+  border-bottom: dotted 2px black;
+  width: 60%;
+}
+
+.menu-price {
+  width: 12%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+}
+
+.menu-list .col-lg-5 {
+  padding: 0;
+  width: 38%;
+  padding-right: 15px;
+}
+
+.menu-item-description p {
+  padding-top: 15px;
+  text-align: initial;
+  color: #777;
 }
