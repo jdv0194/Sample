@@ -63,25 +63,6 @@ hr {
   padding: 50px 15px 50px 15px;
 }
 
-.header-text button {
-  width: 120px;
-  height: 50px;
-  border: 1px solid #a50909;
-  border-radius: 10px;
-  background-color: white;
-  color: #a50909;
-  font-size: 16px;
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif;
-  transition: all 0.5s;
-}
-
-.header-text button:hover {
-  background-color: #a50909;
-  color: white;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.726);
-}
-
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -111,7 +92,7 @@ hr {
 .header span,
 .about-header span,
 .menu-section span {
-  color: #a50909;
+  color: #ba1212;
 }
 
 .about-text p,
@@ -136,13 +117,13 @@ div.about-img-mask {
 }
 
 .about-text button,
-.order-btn {
+.img-btn {
   width: 120px;
   height: 50px;
-  border: 1px solid #a50909;
+  border: 2px solid #ba1212;
   border-radius: 10px;
-  background-color: white;
-  color: #a50909;
+  background-color: transparent;
+  color: white;
   font-size: 16px;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
@@ -150,10 +131,22 @@ div.about-img-mask {
 }
 
 .about-text button:hover,
-.order-btn:hover {
-  background-color: #a50909;
+.img-btn:hover {
+  border: 1px solid #ba1212;
+  background-color: #ba1212;
   color: white;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.726);
+}
+
+.about-text button {
+  color: #ba1212;
+}
+
+.about-text button:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.726), inset 1px -1px 10px black;
+}
+
+.img-btn:hover {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.726), inset 3px -3px 10px black;
 }
 
 .hours-open {
@@ -188,7 +181,7 @@ div.about-img-mask {
 .red-underline {
   width: 25%;
   height: 2px;
-  background: #a50909;
+  background: #ba1212;
   margin: 10px auto 22px auto;
 }
 
