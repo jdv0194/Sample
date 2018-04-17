@@ -1,0 +1,126 @@
+.landing-img {
+  background: url("../images/1.jpg");
+  width: 1349px;
+  height: 750px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.landing-mask {
+  width: 1349px;
+  height: 750px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.header-text {
+  position: absolute;
+  z-index: 2;
+  top: 32%;
+  width: 100%;
+  text-align: center;
+}
+
+.header {
+  font-size: 7em;
+  color: white;
+  font-family: "Lobster", cursive;
+}
+
+.header span {
+  color: #a50909;
+}
+
+hr {
+  width: 55%;
+}
+
+.header-p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4em;
+  line-height: 28px;
+  color: white;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 50px 15px 50px 15px;
+}
+
+.header-text button {
+  width: 120px;
+  height: 50px;
+  border: 1px solid #a50909;
+  border-radius: 10px;
+  background-color: white;
+  color: #a50909;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.header-text button:hover {
+  background-color: #a50909;
+  color: white;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.726);
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.about-us {
+  width: 1349px;
+  height: 525px;
+}
+
+.about-text {
+  max-width: 550px;
+}
+.about-header h2 {
+  font-size: 4em;
+  color: black;
+  font-family: "Lobster", cursive;
+}
+
+.about-header span {
+  color: #a50909;
+}
+
+.about-text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1em;
+  line-height: 24px;
+}
+
+.about-img {
+  width: 480px;
+  height: 400px;
+  background: url("../images/2.jpg");
+  margin: 0 auto;
+  background-size: cover;
+}
+
+div.about-img-mask {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 480px;
+  height: 400px;
+}
+
+.about-text button {
+  width: 120px;
+  height: 50px;
+  border: 1px solid #a50909;
+  border-radius: 10px;
+  background-color: white;
+  color: #a50909;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.about-text button:hover {
+  background-color: #a50909;
+  color: white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.726);
+}
