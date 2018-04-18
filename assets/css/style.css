@@ -71,8 +71,9 @@ hr {
 .about-us {
   width: 100vw;
   height: 90vh;
-  padding-top: 130px;
-  margin-bottom: 20px;
+  padding-top: 120px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
 .about-text {
@@ -143,28 +144,23 @@ div.about-img-mask {
   margin-top: 35px;
 }
 
-.about-text button:hover {
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.726), inset 1px -1px 10px black;
-}
-
-.img-btn:hover {
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.726), inset 3px -3px 10px black;
-}
-
 .hours-open {
   background-image: url('../images/open-hours.jpg');
   background-position: 50% 50%;
   background-size: cover;
-  height: 37vh;
+  height: 65vh;
+  width: 100vw;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
 .hours-overlay {
   background-color: rgba(0, 0, 0, 0.7);
-  height: 37vh;
+  height: 65vh;
 }
 
 .hours-open .hours-section {
-  padding: 12px 0;
+  padding: 40px 0;
 }
 
 .hours-open-text {
@@ -184,7 +180,7 @@ div.about-img-mask {
   width: 25%;
   height: 2px;
   background: #ba1212;
-  margin: 10px auto 22px auto;
+  margin: 10px auto 50px auto;
 }
 
 .hours-text {
@@ -194,9 +190,9 @@ div.about-img-mask {
 .hours-text h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 22px;
   margin: 0;
-  padding-bottom: 25px;
+  padding-bottom: 50px;
 }
 
 .hours-open-text .img-btn {
@@ -206,19 +202,25 @@ div.about-img-mask {
 }
 
 .hours-header {
-  font-size: 3.6em;
+  font-size: 5em;
   margin: 0;
 }
 
 #menu {
   text-align: center;
+  margin-top: -40px;
 }
 
 .menu-section {
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 40px;
   padding-left: 60px;
   margin-right: 120px;
+}
+
+.menu-section h2 {
+  margin-top: 0;
+  padding-top: 10px;
 }
 
 .menu-section h4 {
