@@ -39,8 +39,8 @@ div.landing-mask {
 }
 
 .header,
-.hours-header {
-  font-size: 7em;
+.hours-header,
+.contact-divider-header {
   color: white;
   font-family: 'Lobster', cursive;
 }
@@ -70,10 +70,8 @@ hr {
 
 .about-us {
   width: 100vw;
-  height: 90vh;
+  height: 92vh;
   padding-top: 120px;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
 .about-text {
@@ -144,40 +142,51 @@ div.about-img-mask {
   margin-top: 35px;
 }
 
-.hours-open {
-  background-image: url('../images/open-hours.jpg');
+.hours-open,
+.contact-divider {
   background-position: 50% 50%;
   background-size: cover;
-  height: 65vh;
   width: 100vw;
+}
+
+.hours-open {
+  background-image: url('../images/open-hours.jpg');
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  height: 55vh;
+}
+
+.contact-divider {
+  background-image: url('../images/contact-section.jpg');
+  height: 40vh;
+}
+
+.hours-overlay,
+.contact-divider-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .hours-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
-  height: 65vh;
+  height: 55vh;
+}
+
+.contact-divider-overlay {
+  height: 40vh;
 }
 
 .hours-open .hours-section {
-  padding: 40px 0;
+  padding: 35px 0;
 }
 
-.hours-open-text {
+.hours-open-text,
+.contact-divider-text {
   text-align: center;
   margin: 0 15px;
   color: white;
 }
 
-.hours-open-text h1 {
-  font-family: 'Lobster', cursive;
-  font-weight: bold;
-  font-size: 70px;
-  margin: 0;
-}
-
 .red-underline {
-  width: 25%;
+  width: 23%;
   height: 2px;
   background: #ba1212;
   margin: 10px auto 50px auto;
@@ -192,17 +201,17 @@ div.about-img-mask {
   font-weight: 300;
   font-size: 22px;
   margin: 0;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .hours-open-text .img-btn {
   height: 45px;
   width: 100px;
-  margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 .hours-header {
-  font-size: 5em;
+  font-size: 4em;
   margin: 0;
 }
 
@@ -212,10 +221,10 @@ div.about-img-mask {
 }
 
 .menu-section {
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding-top: 30px;
   padding-left: 60px;
   margin-right: 120px;
+  padding-bottom: 50px;
 }
 
 .menu-section h2 {
@@ -231,7 +240,8 @@ div.about-img-mask {
   margin: 0;
 }
 
-.menu-list {
+.menu-list,
+.menu-list-final {
   padding: 18px 0;
 }
 
@@ -336,10 +346,15 @@ div.about-img-mask {
   font-size: 22px;
 }
 
-.menu-list .col-lg-5 {
+.menu-list .col-lg-5,
+.menu-list-final .col-lg-5 {
   padding: 0;
   width: 38%;
   padding-right: 15px;
+}
+
+.menu-list-final {
+  padding-bottom: 0;
 }
 
 .menu-item-description p {
@@ -348,4 +363,17 @@ div.about-img-mask {
   color: #777;
   line-height: 22px;
   width: 90%;
+}
+
+.contact-divider-header {
+  font-size: 5em;
+  margin: 0;
+}
+
+.contact-divider-text .red-underline {
+  width: 32%;
+}
+
+.contact-divider .contact-divider-section {
+  padding: 85px 0;
 }
