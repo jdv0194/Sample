@@ -40,7 +40,7 @@ div.landing-mask {
 
 .header,
 .hours-header,
-.contact-divider-header {
+.reservation-divider-header {
   color: white;
   font-family: 'Lobster', cursive;
 }
@@ -117,7 +117,9 @@ div.about-img-mask {
 }
 
 .about-text button,
-.img-btn {
+.img-btn,
+.book-btn {
+  outline: none;
   width: 120px;
   height: 50px;
   border: 2px solid #ba1212;
@@ -130,8 +132,18 @@ div.about-img-mask {
   transition: all 0.5s;
 }
 
+.book-btn {
+  width: 85px;
+  height: 34px;
+  border-radius: 4px;
+  margin-top: 18px;
+  font-size: 14px;
+  color: #ba1212;
+}
+
 .about-text button:hover,
-.img-btn:hover {
+.img-btn:hover,
+.book-btn:hover {
   border: 1px solid #ba1212;
   background-color: #ba1212;
   color: white;
@@ -143,35 +155,25 @@ div.about-img-mask {
 }
 
 .hours-open,
-.contact-divider {
+.reservation-divider {
   background-position: 50% 50%;
   background-size: cover;
   width: 100vw;
+  height: 55vh;
 }
 
 .hours-open {
   background-image: url('../images/open-hours.jpg');
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  height: 55vh;
 }
 
-.contact-divider {
+.reservation-divider {
   background-image: url('../images/contact-section.jpg');
-  height: 40vh;
 }
 
 .hours-overlay,
-.contact-divider-overlay {
+.reservation-divider-overlay {
   background-color: rgba(0, 0, 0, 0.7);
-}
-
-.hours-overlay {
   height: 55vh;
-}
-
-.contact-divider-overlay {
-  height: 40vh;
 }
 
 .hours-open .hours-section {
@@ -179,15 +181,15 @@ div.about-img-mask {
 }
 
 .hours-open-text,
-.contact-divider-text {
+.reservation-divider-text {
   text-align: center;
   margin: 0 15px;
   color: white;
 }
 
-.red-underline {
-  width: 23%;
-  height: 2px;
+.hours-open-text .red-underline {
+  width: 12%;
+  height: 4px;
   background: #ba1212;
   margin: 10px auto 50px auto;
 }
@@ -196,7 +198,8 @@ div.about-img-mask {
   margin: 5px auto;
 }
 
-.hours-text h2 {
+.hours-text h2,
+.reservation-text p {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 22px;
@@ -206,7 +209,7 @@ div.about-img-mask {
 
 .hours-open-text .img-btn {
   height: 45px;
-  width: 100px;
+  width: 140px;
   margin-top: 10px;
 }
 
@@ -221,7 +224,7 @@ div.about-img-mask {
 }
 
 .menu-section {
-  padding-top: 30px;
+  padding-top: 75px;
   padding-left: 60px;
   margin-right: 120px;
   padding-bottom: 50px;
@@ -365,15 +368,125 @@ div.about-img-mask {
   width: 90%;
 }
 
-.contact-divider-header {
+.reservation-divider-header {
   font-size: 5em;
   margin: 0;
 }
 
-.contact-divider-text .red-underline {
-  width: 32%;
+.reservation-divider-text .red-underline {
+  width: 16%;
+  height: 4px;
+  background: #ba1212;
+  margin: 10px auto 40px auto;
 }
 
-.contact-divider .contact-divider-section {
-  padding: 85px 0;
+.reservation-text p {
+  padding: 5px 0;
+  font-size: 28px;
+}
+
+.reservation-divider .reservation-divider-section {
+  padding-top: 35px;
+}
+
+#reservations {
+  position: relative;
+}
+
+.book-reservation {
+  padding: 75px 0;
+}
+
+.col-lg-4 img {
+  width: 100%;
+  height: 430px;
+}
+
+.reservation-heading h3,
+.reservation-heading h2 {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+}
+
+.reservation-heading h3 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+.reservation-heading h2 {
+  font-size: 3em;
+}
+
+.reservation-heading span {
+  color: #ba1212;
+}
+
+.red-underline {
+  width: 33%;
+  height: 3px;
+  background: #ba1212;
+  margin: 10px auto 20px auto;
+}
+
+.form-control {
+  border-radius: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.form-group input {
+  border: 1px solid #ba1212;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  border-color: #ba1212;
+}
+
+.time-select,
+.party-select {
+  border: 1px solid #ba1212;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.time-select {
+  background: url('../images/time.png') 2% / 5% no-repeat white;
+}
+
+.party-select {
+  background: url('../images/group-profile-users.png') 2% / 5% no-repeat white;
+}
+
+.time-select select,
+.party-select select {
+  border-radius: 0;
+  outline: none;
+  padding-left: 30px;
+  margin: 0;
+  width: 100%;
+  height: 34px;
+  background: transparent;
+  -webkit-appearance: menulist-text;
+  border: 1px solid #ba1212;
+}
+
+.icon-attr {
+  position: absolute;
+  font-size: 8px;
+  color: #f0f0f0;
+  bottom: 0;
+  right: 0;
+}
+
+.icon-attr a {
+  color: #f0f0f0;
 }
