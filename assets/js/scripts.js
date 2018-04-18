@@ -20,17 +20,27 @@ $(document).ready(function() {
       {
         scrollTop: $('#about-us').offset().top
       },
-      750
+      1000
     );
   });
 
-  // SCROLL TO HOURS/MENU SECTION
+  // SCROLL TO HOURS/MENU
   $('.about-header button').click(function() {
     $('html, body').animate(
       {
         scrollTop: $('.hours-open').offset().top
       },
-      750
+      1000
+    );
+  });
+
+  // SCROLL TO VISIT
+  $('.hours-open-text button').click(function() {
+    $('html, body').animate(
+      {
+        scrollTop: $('.reservation-divider').offset().top
+      },
+      1000
     );
   });
 });
