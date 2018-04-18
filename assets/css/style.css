@@ -159,7 +159,7 @@ div.about-img-mask {
   background-position: 50% 50%;
   background-size: cover;
   width: 100vw;
-  height: 55vh;
+  height: 50vh;
 }
 
 .hours-open {
@@ -173,11 +173,11 @@ div.about-img-mask {
 .hours-overlay,
 .reservation-divider-overlay {
   background-color: rgba(0, 0, 0, 0.7);
-  height: 55vh;
+  height: 50vh;
 }
 
 .hours-open .hours-section {
-  padding: 35px 0;
+  padding: 22px 0;
 }
 
 .hours-open-text,
@@ -386,7 +386,7 @@ div.about-img-mask {
 }
 
 .reservation-divider .reservation-divider-section {
-  padding-top: 35px;
+  padding-top: 25px;
 }
 
 #reservations {

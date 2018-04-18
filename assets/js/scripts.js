@@ -20,7 +20,7 @@ $(document).ready(function() {
       {
         scrollTop: $('#about-us').offset().top
       },
-      750
+      1000
     );
   });
 
@@ -30,7 +30,7 @@ $(document).ready(function() {
       {
         scrollTop: $('.hours-open').offset().top
       },
-      750
+      1000
     );
   });
 
@@ -40,7 +40,7 @@ $(document).ready(function() {
       {
         scrollTop: $('.reservation-divider').offset().top
       },
-      750
+      1000
     );
   });
 });
